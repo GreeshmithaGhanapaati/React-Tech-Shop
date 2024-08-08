@@ -1,32 +1,39 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import productsData from '../productdetails/productsData';
-import "./FeatureProducts.css";
+ import "./FeatureProducts.css";
 function FeatureProducts() {
-    const [featureproduct ,setfeatureproduct]=useState([]);
-    useEffect(()=>{
-            setfeatureproduct(productsData);
-    })
-   
-  return (
-    <div>
-        <h1>Featured Products</h1>{
- featureproduct.length >0 (<div> 
-    {
-        featureproduct.map((product) => (
-            <div key={product.id} className="slider-item">
-              <div className="product-card">
-                <img src={product.image[0]} alt=''/>
-                <h3>{product.title}</h3>
-                <p className="price">{product.finalPrice} <span className="old-price">{product.originalPrice}</span></p>
-              </div>
+    const [initialData, setData] = useState(productsData);
+    const featuredProducts = initialData.filter((product) => product.tag === "featured-product");
+    return (
+        <div>
+            <h1 className='m-5 ml-5 text-center'> Featured Products</h1>
+            <div>
+                {featuredProducts.length > 0 ? (
+                    <div className='d-flex'>
+                        {featuredProducts.map((item) => (
+                            <div key={item.id}>
+                                <div className='container '>
+                                   <div className='row'>
+                                   <div className="card bg-black  text-white m-2">
+                                      <h4>{item.title}</h4>
+                                        <img src={item.images[0]} alt={item.id}  width={200} />
+                                      <p className='m-5'> <span>₹{item.finalPrice}</span> <span style={{ textDecoration: 'line-through' }}>₹{item.originalPrice}</span> </p>
+                                    </div>
+                                   </div>
+                                  
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <div>
+                        <h1>Loading....</h1>
+                    </div>
+                )}
             </div>
-          ))
-    }
- </div>) & (<div>Loading....! </div>)
-        }
-       
-    </div>
-  )
+        </div>
+    );
 }
 
-export default FeatureProducts
+export default FeatureProducts;
+

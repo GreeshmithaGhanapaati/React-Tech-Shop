@@ -1,4 +1,4 @@
-/* src/components/FeatureProducts.css */
+/* 
 
 .feature-products-container {
     text-align: center;
@@ -49,4 +49,8 @@
     color: #888;
     margin-left: 10px;
   }
+  .row{
+    display: flex;
+  
+  } */
   

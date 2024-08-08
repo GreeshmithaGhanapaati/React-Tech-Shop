@@ -1,73 +1,7 @@
-// import { useState } from 'react';
-// import Carousel from 'react-bootstrap/Carousel';
 
-// function Slider() {
-//   const [index, setIndex] = useState(0);
-
-//   const handleSelect = (selectedIndex) => {
-//     setIndex(selectedIndex);
-//   };
-
-//   return (
-//     <Carousel activeIndex={index} onSelect={handleSelect}>
-//       <Carousel.Item>
-//      <img src="/images/products/jbl660nc-1.png" alt="" />
-//         <Carousel.Caption>
-          
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//       <img src="/images/products/jbl660nc-2.png" alt="" />
-//         <Carousel.Caption>
-          
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//       <img src="/images/products/jbl660nc-3.png" alt="" />
-//         <Carousel.Caption>
-         
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
-
-// export default Slider;
-// import { useState } from 'react';
-// import Carousel from 'react-bootstrap/Carousel';
-
-// function Slider() {
-//   const [index, setIndex] = useState(0);
-
-//   const handleSelect = (selectedIndex) => {
-//     setIndex(selectedIndex);
-//   };
-
-//   return (
-//     <Carousel activeIndex={index} onSelect={handleSelect} indicators={true}>
-//       <Carousel.Item>
-//         <img src="/images/products/jbl660nc-1.png" alt=""  height={500} />
-//         <Carousel.Caption>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img src="/images/products/jbl660nc-2.png" alt="" height={500}  />
-//         <Carousel.Caption>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <img src="/images/products/jbl660nc-3.png" alt="" height={500} />
-//         <Carousel.Caption>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
-
-// export default Slider;
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './Carosal.css'; // Import your custom CSS
+import './Carosal.css'; 
 
 function Slider() {
   const [index, setIndex] = useState(0);
@@ -77,7 +11,7 @@ function Slider() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} indicators={true}>
+    <Carousel activeIndex={index} onSelect={handleSelect}   controls={false} >
       <Carousel.Item>
         <img src="/images/products/jbl660nc-1.png" alt="First slide"  height={400}/>
         <Carousel.Caption>

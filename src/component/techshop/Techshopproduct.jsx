@@ -1,12 +1,17 @@
 import React from 'react'
-import Slider from '../carosal/Slider'
+import Slider from '../carosal/Slider';
+import FeatureProducts from '../featureproduct/FeatureProducts';
+import TopProducts from '../topproduct/TopProducts';
+
 
 function Techshopproduct() {
   return (
     <div>
-      <Slider />
-      <h1>heloooo</h1>
-    </div>
+      <Slider/>  
+      <FeatureProducts/>
+      <TopProducts/>
+     
+     </div>
   )
 }
 

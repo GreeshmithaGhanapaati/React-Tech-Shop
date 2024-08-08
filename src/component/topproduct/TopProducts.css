@@ -1,0 +1,35 @@
+.img-card{
+    position: relative;
+    overflow: hidden; 
+  }
+
+  .img-card img {
+    transition: transform 0.1s ease, filter 0.3s ease; 
+  }
+
+  .img-card:hover img {
+    transform: scale(1.1); 
+  }
+
+
+.button_division button{
+  background-color: red;
+  color: white;
+}
+.cardtitle{
+    font-size: 25px;
+}
+.cardinfo{
+    color:gray;
+    font-size: large;
+}
+.cardfinalp{
+    font-size: 30px;
+}
+.cardoriginalp{
+    font-size: 22px;
+     
+}
+.imgcard{
+    background-color:#090909;
+}

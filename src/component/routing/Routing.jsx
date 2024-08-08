@@ -6,7 +6,7 @@ function Routing() {
   return (
     <div>
         <Routes>
-            <Route path='/Techshopproduct'   element ={<Techshopproduct/>}/>
+            <Route path='/'   element ={<Techshopproduct/>}/>
         </Routes>
     </div>
   )
