@@ -1,0 +1,96 @@
+/* .footerpart1{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 80px;
+}
+.p1{
+    display: flex;
+    justify-content: center;
+} */
+
+.footer {
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+}
+.head{
+    margin-bottom: 10px;
+}
+.adv {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.expdel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.advt {
+    font-size: 35px;
+    color: red;
+}
+
+.mainp {
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.footer-content {
+    padding-top: 30px;
+}
+
+.f1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.f1 div {
+    flex: 1;
+}
+.f1 div input{
+    background-color: #000;
+   border: 1px solid rgb(149, 147, 147);
+}
+
+.f1 ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.f1 ul li {
+    color: #aaa;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.subs {
+    width: 120px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cpyrght {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.icons > i {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}

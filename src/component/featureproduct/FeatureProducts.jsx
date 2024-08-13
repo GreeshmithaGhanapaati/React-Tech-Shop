@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import productsData from '../productdetails/productsData';
  import "./FeatureProducts.css";
+ 
 function FeatureProducts() {
+
     const [initialData, setData] = useState(productsData);
     const featuredProducts = initialData.filter((product) => product.tag === "featured-product");
     return (
@@ -30,6 +32,7 @@ function FeatureProducts() {
                         <h1>Loading....</h1>
                     </div>
                 )}
+               
             </div>
         </div>
     );
