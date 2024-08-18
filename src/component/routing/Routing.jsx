@@ -11,7 +11,7 @@ function Routing() {
         <Routes>
             <Route path='/'   element ={<Techshopproduct/>}/>
             <Route path='/cart' element ={<Cart/>}/>
-            <Route path='/Productdescribe' element ={<Productdescribe/>}/>
+            <Route path='/Productdescribe/:id' element ={<Productdescribe/>}/>
             <Route path='/BrowserProduct' element ={<BrowserProduct/>}/>
         </Routes>
     </div>

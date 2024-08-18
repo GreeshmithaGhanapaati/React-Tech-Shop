@@ -15,7 +15,7 @@ function TopProducts({products}) {
     <div className='row '>
       {/* {initialProducts.slice(0, 11).map((products) => ( */}
         <div key={products.id} className='col-md-3 mb-4 ' >
-          <Link to = '/Productdescribe' className='text-decoration-none '>
+          <Link  to={`/productdescribe/${products.id}`}  className='text-decoration-none '>
             <div className='custom-cart card bg-black text-white border p-1 'style={{ width: '300px'}}>
           <div className='img-card imgcard'style={{ width: '290px', height:'200px'}}>
           <img src={products.images[0]} alt={products.title} 
