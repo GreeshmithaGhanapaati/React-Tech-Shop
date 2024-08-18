@@ -11,15 +11,16 @@ function TopProducts({products}) {
   // }, [])
   return (
   <>
-    <div className=' my-4 p-4 m-4 '>
+    <div className='  p-2 m-3 '>
     <div className='row '>
       {/* {initialProducts.slice(0, 11).map((products) => ( */}
         <div key={products.id} className='col-md-3 mb-4 ' >
-          <Link to={`/${products.id}`} className='text-decoration-none '>
-            <div className='card bg-black text-white border p-1 'style={{ width: '310px',height:'auto' }}>
-          <div className='img-card imgcard'style={{ width: '300px', height:'200px'}}>
+          <Link to = '/Productdescribe' className='text-decoration-none '>
+            <div className='custom-cart card bg-black text-white border p-1 'style={{ width: '300px'}}>
+          <div className='img-card imgcard'style={{ width: '290px', height:'200px'}}>
           <img src={products.images[0]} alt={products.title} 
-          className='card-img-top p-4 img-fluid' style={{ height: '220px', width:'300px', objectFit:'contain'}}/>
+          className='card-img-top p-4 img-fluid' 
+          style={{ height: '220px', width:'300px', objectFit:'contain'}}/>
           </div>
         
              <span className='icon'> {[...Array(products.rateCount)].map(i=>< IoStarSharp key={i} className='star'/>)}</span>
@@ -38,11 +39,10 @@ function TopProducts({products}) {
           </div>
         </div>
       </Link>
+     
     </div>
-   {/* ))}  */}
 </div>
 </div>
-
 </>
   )
 }

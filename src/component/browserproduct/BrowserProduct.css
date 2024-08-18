@@ -1,0 +1,21 @@
+.scrollable-div{
+    width: 200px;
+   margin-top: 75px;
+   margin-left: 30px;
+   overflow-y: scroll;
+   height: 510px;
+}
+
+.scrollable-div p:hover{
+color: red;
+cursor: pointer;
+}
+.scrollable-div label {
+    margin-left: 20px;
+}
+.bcard {
+    padding: 0px;
+   display: flex;
+   flex-wrap: wrap;
+   width: 1090px;
+}

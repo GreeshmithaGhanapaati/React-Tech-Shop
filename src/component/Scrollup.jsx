@@ -12,7 +12,7 @@ function MoveToTopButton() {
   };
 
   return (
-    <button onClick={handleClick} className="gotop"style={{ height:'50px',width:'50px',position: 'fixed', bottom: 0, right: 10, padding: '15px', backgroundColor: 'red', color: '#fff', cursor: 'pointer',border:'none' }}>
+    <button onClick={handleClick} style={{ height:'40px',width:'40px',position: 'fixed', bottom: 0, right: 10, padding: '15px', backgroundColor: 'red', color: '#fff', cursor: 'pointer',border:'none' ,zIndex:'100'}}>
       {isScrolling ? 'Scanning...' : '^'}
     </button>
   );

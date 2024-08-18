@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import productsData from '../productdetails/productsData';
  import "./FeatureProducts.css";
+
  
 function FeatureProducts() {
 
@@ -34,6 +35,7 @@ function FeatureProducts() {
                 )}
                
             </div>
+          
         </div>
     );
 }

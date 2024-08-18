@@ -11,6 +11,7 @@ function Techshopproduct() {
   return (
     <div>
       <Slider/>  
+      
       <FeatureProducts/>
       <Scrollup/>
       <Categoryproduct />

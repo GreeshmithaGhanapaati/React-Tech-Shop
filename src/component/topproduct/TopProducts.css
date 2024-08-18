@@ -40,3 +40,12 @@
     margin-left: 10px;
     margin-top: 10px;
 }
+.flexGallery{
+  transform: translate(-18px,10px);
+  padding: 30px;
+}
+.custom-cart-all{
+  transform: translate(30px,0px);
+  width: 300px;
+  height: 200px;
+}

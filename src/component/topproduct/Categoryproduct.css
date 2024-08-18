@@ -26,3 +26,15 @@
     background-color: red;
 
 }
+
+.extra-margin{
+    margin-top: 31px;
+}
+.bprodt{
+    margin-top: 50%;
+    font-size: 30px;
+}
+.bprodt p{
+    color: aliceblue;
+    text-decoration: none;
+}

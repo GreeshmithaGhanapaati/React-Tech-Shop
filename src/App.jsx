@@ -3,6 +3,7 @@ import './App.css'
 // import FeatureProducts from './component/featureproduct/FeatureProducts'
 import Navbar from './component/navbar/Navbar'
 import Techshopproduct from './component/techshop/Techshopproduct'
+import Routing from './component/routing/Routing'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Techshopproduct/>
+    <Routing/>
+    
     
      
     </>

@@ -5,6 +5,7 @@
     height: 12px;
     border-radius: 50%;
     margin: 1px;
+   
   }
   
   .carousel-indicators .active {
@@ -19,7 +20,7 @@
     text-align: left;
     float: left;
     margin-right: 600px;
-    
+
     margin-bottom: 50px;
   }
   
